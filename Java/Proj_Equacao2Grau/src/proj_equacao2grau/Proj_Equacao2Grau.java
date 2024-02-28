@@ -15,7 +15,10 @@ public class Proj_Equacao2Grau {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hello-world!!!!");
+        Equacao2Grau eq1 = new Equacao2Grau(1,-5,6);
+        eq1.calcularX1();
+        eq1.calcularX2();
+        eq1.imprimir();
     }
     
 }
