@@ -50,13 +50,13 @@ public class Equacao2Grau {
     public void calcularX2(){
         x2 = (-b - Math.sqrt(calcularDelta()))/(2*a);
     }
-    public void imprimir(){
-        System.out.println("a= "+a);
-        System.out.println("b= "+b);
-        System.out.println("c= "+c);
-        System.out.println("x1= "+x1);
-        System.out.println("x2= "+x2);
-    }
+    //public void imprimir(){
+      //System.out.println("a= "+a);
+      //System.out.println("b= "+b);
+      //System.out.println("c= "+c);
+      //System.out.println("x1= "+x1);
+      //System.out.println("x2= "+x2);
+    //}
     
     
 }
