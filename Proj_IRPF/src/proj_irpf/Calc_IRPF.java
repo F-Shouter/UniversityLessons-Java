@@ -9,7 +9,10 @@ package proj_irpf;
  * @author Fujoshi Shouter
  */
 public class Calc_IRPF {
-            
-       
-    
+    private String nome;
+    private String CPF;
+    private String endereco;
+    private double salario;
+    private double irpf;
+     
 }
