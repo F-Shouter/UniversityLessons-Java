@@ -9,5 +9,7 @@ package proj_irpf;
  * @author Fujoshi Shouter
  */
 public class Calc_IRPF {
+            
+       
     
 }
