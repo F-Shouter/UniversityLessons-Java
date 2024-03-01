@@ -15,6 +15,7 @@ public class Calc_IRPF {
     private String endereco;
     private double salario;
     private double irpf;
+    private double salarioFinal;
 
     //construtor 
     public Calc_IRPF(String n, String c, String e, double s) {
@@ -23,6 +24,7 @@ public class Calc_IRPF {
         endereco = e;
         salario = s;
         irpf = 0;
+        salarioFinal = 0;
     }
 
     //metodos de acesso
@@ -53,6 +55,9 @@ public class Calc_IRPF {
     public double getIRPF(){
         return irpf;
     }
+    public double getSalarioFinal(){
+        return salarioFinal;
+    }
     
     //metodo para calcular o IRPF da pessoa
     public void calcularIrpf(){
@@ -68,11 +73,17 @@ public class Calc_IRPF {
             }
         }
     }
+    
+    public void calcularSFinal(){
+        salarioFinal = salario - irpf;
+    }
     public void imprimir(){
-        System.out.println("Nome.....: " + nome);
-        System.out.println("CPF......: " + CPF);
-        System.out.println("Endereço.: " + endereco);
-        System.out.println("Salário..: " + salario);
-        System.out.println("Imposto..: " + irpf);
+        System.out.println("Nome.........: " + nome);
+        System.out.println("CPF..........: " + CPF);
+        System.out.println("Endereço.....: " + endereco);
+        System.out.println("Salário......: " + salario);
+        System.out.println("Imposto......: " + irpf);
+        System.out.println("---------------------");
+        System.out.println("Salário Final: " + salarioFinal);
     }
 }
