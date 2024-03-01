@@ -14,8 +14,10 @@ public class Proj_IRPF {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("aaaaaa");
-        // TODO code application logic here
+        Calc_IRPF c1;
+        c1 = new Calc_IRPF("Anne","000000000-00","Mogi das Cruzes",1800);
+        c1.calcularIrpf();
+        c1.imprimir();
     }
     
 }
