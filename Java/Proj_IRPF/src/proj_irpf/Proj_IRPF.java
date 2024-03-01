@@ -14,7 +14,7 @@ public class Proj_IRPF {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("a");
+        System.out.println("aaaaaa");
         // TODO code application logic here
     }
     
