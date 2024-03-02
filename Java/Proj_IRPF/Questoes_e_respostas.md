@@ -56,13 +56,47 @@ Calc_IRPF
 ```
 **11) Qual o nome da classe executável implementada nesta aula?** 
 ```
-classe Proj_IRPF
+Proj_IRPF
 ```
 ## Desafios:
-- [x] 1) Implementar os métodos de acesso que estão faltando na classe Contribuinte. 
+- [x] 1) Implementar os métodos de acesso que estão faltando na classe Calc_IRPF. 
 Lembre-se de fortalecer o encapsulamento. 
+```Java
+ public void setNome(String n) {
+        nome = n;
+    }
+    public String getNome() {
+        return nome;
+    }
+    public void setCPF(String c) {
+        CPF = c;
+    }
+    public String getCPF() {
+        return CPF;
+    }
+    public void setEndereco(String e) {
+        endereco = e;
+    }
+    public String getEndereco() {
+        return endereco;
+    }
+    public void setSalario(double s) {
+        salario = s;
+    }
+    public double getSalario() {
+        return salario;
+    }
+    public double getIRPF(){
+        return irpf;
+    }
+```
 - [x] 2) Modificar a classe Proj_IRPF para que ela exiba apenas o nome, o salário e 
 o imposto de renda a ser cobrado.
+```Java
+System.out.println("Nome.........: " + c1.getNome()); 
+System.out.println("CPF..........: " + c1.getSalario());
+System.out.println("Endereço.....: " + c1.getIRPF());
+```
 - [x] 3) Criar um método para calcular o salário líquido do contribuinte irá receber sem 
 criar atributos extras.
 ```Java
@@ -72,10 +106,11 @@ criar atributos extras.
 ```
 - [x] 4) Modificar o método imprimir() para exibir também o salário líquido.
 ```Java
-System.out.print("Salário Final: ");
-System.out.println( salario - irpf);
+// código para classe Calc_IRPF:
+System.out.print("Salário líquido: " + calcSFinal());
 
-// Salário Final: 2125.0
+// código para classe Proj_IRPF:
+System.out.println("Salário líquido: " + c1.calcSFinal());
 ```
 5) Alterar o método calcularIrpf() para que ele atenda a regra abaixo.
 salario <= 1058 ➔ Contribuinte Isento

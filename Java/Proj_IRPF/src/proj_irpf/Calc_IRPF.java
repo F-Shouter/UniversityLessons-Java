@@ -73,20 +73,20 @@ public class Calc_IRPF {
             }
         }
     }
-    public double imprimirSFinal(){
+    public double calcSFinal(){
         return salario - irpf;
     }
     public void calcularSFinal(){
         salarioFinal = salario - irpf;
     }
-    public void imprimir(){
-        System.out.println("Nome.........: " + nome);
-        System.out.println("CPF..........: " + CPF);
-        System.out.println("Endereço.....: " + endereco);
-        System.out.println("Salário......: " + salario);
-        System.out.println("Imposto......: " + irpf);
-        System.out.println("---------------------");
-        System.out.println("Salário Final: " + salarioFinal);
-        System.out.println(imprimirSFinal());
-    }
+    //public void imprimir(){
+       // System.out.println("Nome.........: " + nome);
+       // System.out.println("CPF..........: " + CPF);
+       // System.out.println("Endereço.....: " + endereco);
+       // System.out.println("Salário......: " + salario);
+       // System.out.println("Imposto......: " + irpf);
+       // System.out.println("---------------------");
+       // System.out.println("Salário Final: " + salarioFinal);
+       // System.out.println(calcSFinal());
+    //}
 }
