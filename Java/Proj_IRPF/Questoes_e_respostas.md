@@ -62,7 +62,7 @@ Proj_IRPF
 - [x] 1) Implementar os métodos de acesso que estão faltando na classe Calc_IRPF. 
 Lembre-se de fortalecer o encapsulamento. 
 ```Java
- public void setNome(String n) {
+    public void setNome(String n) {
         nome = n;
     }
     public String getNome() {
@@ -93,9 +93,9 @@ Lembre-se de fortalecer o encapsulamento.
 - [x] 2) Modificar a classe Proj_IRPF para que ela exiba apenas o nome, o salário e 
 o imposto de renda a ser cobrado.
 ```Java
-System.out.println("Nome.........: " + c1.getNome()); 
-System.out.println("CPF..........: " + c1.getSalario());
-System.out.println("Endereço.....: " + c1.getIRPF());
+System.out.println("Nome........: " + c1.getNome()); 
+System.out.println("Salário.....: " + c1.getSalario());
+System.out.println("Imposto.....: " + c1.getIRPF());
 ```
 - [x] 3) Criar um método para calcular o salário líquido do contribuinte irá receber sem 
 criar atributos extras.
