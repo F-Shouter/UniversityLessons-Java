@@ -35,7 +35,7 @@ Proj_IRPF
 ```
 7) Por que o atributo irpf não deve ser passado como parâmetro para o construtor?
 ```
-Porque é um imposto que irá ser calculado. Não faz sentido uma pessoa física passar o imposto que se submeterá sob seu salário.
+Porque irpf irá ser calculado. Não faz sentido uma pessoa física passar o imposto que se submeterá sob seu salário.
 ```
 8) Quais valores serão impressos se a linha “c1.calcularIrpf();” for removida da 
 classe Proj_IRPF?
