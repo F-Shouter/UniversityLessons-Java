@@ -61,11 +61,22 @@ classe Proj_IRPF
 ## Desafios:
 - [x] 1) Implementar os métodos de acesso que estão faltando na classe Contribuinte. 
 Lembre-se de fortalecer o encapsulamento. 
-2) Modificar a classe ReceitaFederal para que ela exiba apenas o nome, o salário e 
+- [x] 2) Modificar a classe Proj_IRPF para que ela exiba apenas o nome, o salário e 
 o imposto de renda a ser cobrado.
-3) Criar um método para calcular o salário líquido do contribuinte irá receber sem 
+- [x] 3) Criar um método para calcular o salário líquido do contribuinte irá receber sem 
 criar atributos extras.
-4) Modificar o método imprimir() para exibir também o salário líquido.
+```Java
+ public double calcSFinal(){
+        return salario - irpf;
+    }
+```
+- [x] 4) Modificar o método imprimir() para exibir também o salário líquido.
+```Java
+System.out.print("Salário Final: ");
+System.out.println( salario - irpf);
+
+// Salário Final: 2125.0
+```
 5) Alterar o método calcularIrpf() para que ele atenda a regra abaixo.
 salario <= 1058 ➔ Contribuinte Isento
 1058 < salario <=2100 ➔ 15% do salario

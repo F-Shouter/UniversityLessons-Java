@@ -16,7 +16,7 @@ public class Proj_IRPF {
     public static void main(String[] args) {
         Calc_IRPF c1;
         c1 = new Calc_IRPF("Anne Yukari Yamasaki","000000000-00","Mogi das Cruzes",2500);
-        //c1.calcularIrpf();
+        c1.calcularIrpf();
         c1.calcularSFinal();
         c1.imprimir();
     }

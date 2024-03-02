@@ -73,7 +73,9 @@ public class Calc_IRPF {
             }
         }
     }
-    
+    public double imprimirSFinal(){
+        return salario - irpf;
+    }
     public void calcularSFinal(){
         salarioFinal = salario - irpf;
     }
@@ -85,5 +87,6 @@ public class Calc_IRPF {
         System.out.println("Imposto......: " + irpf);
         System.out.println("---------------------");
         System.out.println("Salário Final: " + salarioFinal);
+        System.out.println(imprimirSFinal());
     }
 }
