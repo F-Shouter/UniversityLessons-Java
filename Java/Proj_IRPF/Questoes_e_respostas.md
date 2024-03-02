@@ -118,3 +118,18 @@ System.out.println("Salário líquido: " + c1.calcSFinal());
 salario <= 1058 ➔ Contribuinte Isento
 1058 < salario <=2100 ➔ 15% do salario
 salario > 2100 ➔ 27,5% do salario.
+```Java
+ public void calcularIrpf(){
+        if(salario <= 1058){
+            irpf = 0;
+        }
+        else {
+            if(salario <= 2100){
+                irpf = salario*0.15; //15% do salario
+            }
+            else {
+                irpf = salario*0.27; //27% do salario
+            }
+        }
+    }
+```

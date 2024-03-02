@@ -61,15 +61,15 @@ public class Calc_IRPF {
     
     //metodo para calcular o IRPF da pessoa
     public void calcularIrpf(){
-        if(salario <= 900){
+        if(salario <= 1058){
             irpf = 0;
         }
         else {
-            if(salario > 1800){
+            if(salario <= 2100){
                 irpf = salario*0.15; //15% do salario
             }
             else {
-                irpf = salario*0.1; //10% do salario
+                irpf = salario*0.27; //27% do salario
             }
         }
     }
