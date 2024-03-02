@@ -1,5 +1,5 @@
 ## Responda as questões abaixo com base nessa aula:
-1) Quais os valores de saída se atribuirmos um salario de R$500,00?
+**1) Quais os valores de saída se atribuirmos um salario de R$500,00?**
 ```
 Nome.........: Anne Yukari Yamasaki
 CPF..........: 000000000-00
@@ -7,7 +7,7 @@ Endereço.....: Mogi das Cruzes
 Salário......: 500.0
 Imposto......: 0.0
 ```
-2) Quais os valores de saída se atribuirmos R$2500,00?
+**2) Quais os valores de saída se atribuirmos R$2500,00?**
 ```
 Nome.........: Anne Yukari Yamasaki
 CPF..........: 000000000-00
@@ -15,30 +15,30 @@ Endereço.....: Mogi das Cruzes
 Salário......: 2500.0
 Imposto......: 375.0
 ```
-3) Qual o nome da classe que calcula o imposto de renda do contribuinte?
+**3) Qual o nome da classe que calcula o imposto de renda do contribuinte?**
 ```
 Calc_IRPF
 ```
-4) Qual o nome da classe que instancia um objeto da classe Contribuinte?
+**4) Qual o nome da classe que instancia um objeto da classe Contribuinte?**
 ```
 Proj_IRPF
 ```
-5) Qual o nome do objeto instanciado?
+**5) Qual o nome do objeto instanciado?**
 ```
  c1 
 ```
-6) Quais os métodos da classe Calc_IRPF que foram utilizados nesta aula?
+**6) Quais os métodos da classe Calc_IRPF que foram utilizados nesta aula?**
 ```Java
  public Calc_IRPF()
  public void calcularIrpf()
  public void imprimir()
 ```
-7) Por que o atributo irpf não deve ser passado como parâmetro para o construtor?
+**7) Por que o atributo irpf não deve ser passado como parâmetro para o construtor?**
 ```
 Porque irpf irá ser calculado. Não faz sentido uma pessoa física passar o imposto que se submeterá sob seu salário.
 ```
-8) Quais valores serão impressos se a linha “c1.calcularIrpf();” for removida da 
-classe Proj_IRPF?
+**8) Quais valores serão impressos se a linha “c1.calcularIrpf();” for removida da 
+classe Proj_IRPF?**
 ```Java
 Nome.........: Anne Yukari Yamasaki
 CPF..........: 000000000-00
@@ -46,15 +46,15 @@ Endereço.....: Mogi das Cruzes
 Salário......: 2500.0
 Imposto......: 0.0 //O imposto não é calculado.
 ```
-9) Por que não se deve implementar um método “setIrpf”?
+**9) Por que não se deve implementar um método “setIrpf”?**
 ```
 Não precisamos dizer o valor que queremos calcular. 
 ```
-10) Qual o nome da classe de negócio implementada nesta aula?
+**10) Qual o nome da classe de negócio implementada nesta aula?**
 ```
 Calc_IRPF
 ```
-11) Qual o nome da classe executável implementada nesta aula? 
+**11) Qual o nome da classe executável implementada nesta aula?** 
 ```
 classe Proj_IRPF
 ```
