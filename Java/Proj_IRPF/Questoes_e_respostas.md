@@ -109,6 +109,8 @@ criar atributos extras.
 // código para classe Calc_IRPF:
 System.out.print("Salário líquido: " + calcSFinal());
 
+// ou
+
 // código para classe Proj_IRPF:
 System.out.println("Salário líquido: " + c1.calcSFinal());
 ```
