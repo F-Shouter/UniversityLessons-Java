@@ -38,7 +38,7 @@ public class Proj_IRPF {
         System.out.println("------------------------");
         System.out.println("Your income tax has calculated!" + "\nMs, " + c1.getNome() + ", you have to pay: ");
         System.out.println("R$ " + c1.getIRPF() + " reais");
-        
+        System.out.println("------------------------");
         //System.out.println("Nome.........: " + c1.getNome());
         //System.out.println("Nome.........: " + c1.getCPF());
        // System.out.println("Nome.........: " + c1.getEndereco());
@@ -50,7 +50,8 @@ public class Proj_IRPF {
         //System.out.println("---------------------");
         //System.out.println("Salário Final: " + salarioFinal);
         //System.out.println(calcSFinal());
-        System.out.println("Are you going to pay the IRPF now?" + "\n [YES] or [NO]");
+        System.out.println("Are you going to pay the IRPF now?" + "\n 1.[YES] or 2.[NO]");
+        System.out.println("------------------------");
         int n5 = entrada.nextInt();
         c1.setResposta(n5);
         c1.respostaFinal();
