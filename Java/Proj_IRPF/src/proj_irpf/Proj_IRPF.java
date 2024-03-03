@@ -3,26 +3,47 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package proj_irpf;
-
-/**
- *
- * @author Fujoshi Shouter
- */
+//@author Fujoshi Shouter
+import java.util.Scanner;
 public class Proj_IRPF {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        Calc_IRPF c1;
-        c1 = new Calc_IRPF("Anne Yukari Yamasaki", "000000000-00", "Mogi das Cruzes", 2500);
+        
+        Scanner entrada = new Scanner (System.in);
+        
+        System.out.println("What your name?");
+        String n1 = entrada.nextLine();
+        
+        System.out.println("And, what's your CPF: ");
+        String n2 = entrada.nextLine();
+        
+        System.out.println("Where are you from Ms " + n1 + "?");
+        String n3 = entrada.nextLine();
+        
+        System.out.println("What is the value of your current salary?");
+        double n4 = entrada.nextDouble();
+        
+        Calc_IRPF c1 = new Calc_IRPF();
+        //c1 = new Calc_IRPF("Anne Yukari Yamasaki", "000000000-00", "Mogi das Cruzes", 2500);
+        
+        c1.setNome(n1);
+        c1.setCPF(n2);
+        c1.setEndereco(n3);
+        c1.setSalario(n4);
+        
         c1.calcularIrpf();
-        //c1.calcularSFinal();
+        c1.calcSFinal();
         //c1.imprimir();
-        System.out.println("Nome.........: " + c1.getNome());
-        System.out.println("CPF..........: " + c1.getSalario());
-        System.out.println("Endereço.....: " + c1.getIRPF());
-        System.out.println("Salário líquido: " + c1.calcSFinal());
+        
+        System.out.println("------------------------");
+        System.out.println("Your income tax has calculated!" + "\nMs, " + c1.getNome() + ", you have to pay: ");
+        System.out.println("R$ " + c1.getIRPF() + " reais");
+        //System.out.println("Nome.........: " + c1.getNome());
+        //System.out.println("Nome.........: " + c1.getCPF());
+       // System.out.println("Nome.........: " + c1.getEndereco());
+       // System.out.println("CPF..........: " + c1.getSalario());
+       //System.out.println("Endereço.....: " + c1.getIRPF());
+       // System.out.println("Salário líquido: " + c1.calcSFinal());
         
         //System.out.println("Imposto......: " + irpf);
         //System.out.println("---------------------");
