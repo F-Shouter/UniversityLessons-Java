@@ -109,10 +109,12 @@ public class Calc_IRPF {
                System.out.println("meme");
            }
            else {
-               while (resposta != 1){
+               while (resposta != 1 && resposta != 2){
                    Scanner input = new Scanner(System.in);
                    System.out.println("Are you going to pay the IRPF now?" + "\n [YES] or [NO]");
-                   int resposta = input.nextInt();
+                   int rr = input.nextInt();
+                   setResposta(rr);
+                   respostaFinal();
                }
            }
        }
