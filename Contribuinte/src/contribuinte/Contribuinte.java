@@ -13,7 +13,7 @@ public class Contribuinte {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {aaaaaaaaaaaaaa
         // TODO code application logic here
     }
     
