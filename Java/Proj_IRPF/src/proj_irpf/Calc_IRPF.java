@@ -101,27 +101,27 @@ public class Calc_IRPF {
     //}
     
     public void respostaFinal(){
-       if (resposta == 1){
-           System.out.println("Resposta final, sei lá. Depois eu faço...");
-           System.out.println("------------------------");
-       }
-       else{
-           if (resposta == 2){
-               System.out.println("Pobre 😒");
-               System.out.println("------------------------");
-           }
-           else {
-               while (resposta != 1 && resposta != 2){
-                   Scanner input = new Scanner(System.in);
-                   System.out.println("------------------------");
-                   System.out.println("Are you going to pay the IRPF now?" + "\n [YES] or [NO]"
-                   + "\n Pelo amor de Deus cara, responde essa bagaça logo.");
-                   System.out.println("------------------------");
-                   int rr = input.nextInt();
-                   setResposta(rr);
-                   respostaFinal();
-               }
-           }
-       }
+    if (resposta == 1){
+        System.out.println("Resposta final, sei lá. Depois eu faço...");
+        System.out.println("------------------------");
+    }
+    else{
+        if (resposta == 2){
+            System.out.println("Pobre 😒");
+            System.out.println("------------------------");
+        }
+        else {
+            while (resposta != 1 && resposta != 2){
+                Scanner input = new Scanner(System.in);
+                System.out.println("------------------------");
+                System.out.println("Are you going to pay the IRPF now?" + "\n [YES] or [NO]"
+                + "\n Pelo amor de Deus cara, responde essa bagaça logo.");
+                System.out.println("------------------------");
+                int rr = input.nextInt();
+                setResposta(rr);
+                respostaFinal();
+            }
+        }
+    }
     }
 }
