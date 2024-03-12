@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Java/Proj_IRPF/src",
+        "Java/Contribuinte/src",
+        "Java/ReceitaFederal/src"
+    ]
+}
